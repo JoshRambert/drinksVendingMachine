@@ -1,0 +1,9 @@
+C:\Users\Joshua\Desktop\C#\drinkVendingMachine\drinkVendingMachine\bin\Debug\drinkVendingMachine.exe.config
+C:\Users\Joshua\Desktop\C#\drinkVendingMachine\drinkVendingMachine\bin\Debug\drinkVendingMachine.exe
+C:\Users\Joshua\Desktop\C#\drinkVendingMachine\drinkVendingMachine\bin\Debug\drinkVendingMachine.pdb
+C:\Users\Joshua\Desktop\C#\drinkVendingMachine\drinkVendingMachine\obj\Debug\drinkVendingMachine.csprojResolveAssemblyReference.cache
+C:\Users\Joshua\Desktop\C#\drinkVendingMachine\drinkVendingMachine\obj\Debug\drinkVendingMachine.Form1.resources
+C:\Users\Joshua\Desktop\C#\drinkVendingMachine\drinkVendingMachine\obj\Debug\drinkVendingMachine.Properties.Resources.resources
+C:\Users\Joshua\Desktop\C#\drinkVendingMachine\drinkVendingMachine\obj\Debug\drinkVendingMachine.csproj.GenerateResource.Cache
+C:\Users\Joshua\Desktop\C#\drinkVendingMachine\drinkVendingMachine\obj\Debug\drinkVendingMachine.exe
+C:\Users\Joshua\Desktop\C#\drinkVendingMachine\drinkVendingMachine\obj\Debug\drinkVendingMachine.pdb
