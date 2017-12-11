@@ -15,12 +15,12 @@ namespace drinkVendingMachine
     {
         public string name;
         public int amount;
-        public int price;
+        public decimal price;
     }
 
     public partial class Form1 : Form
     {
-        //Create the varaible that will hold the sales
+        //Create the variable that will hold the sales
         double totalSales;
         const string otherOption = "There are no more perhaps another choice?....";
         Soda[] sodas = new Soda[]
@@ -46,6 +46,7 @@ namespace drinkVendingMachine
             {
                 coke.amount = int.Parse(cokeDrinks.Text);
                 coke.name = cokeNameLabel.Text;
+                coke.price = decimal.Parse(cokePrice.Text.Substring(1));
                 //Find a way to assign the price of the sodas.
             }
             catch (Exception ex)
@@ -73,6 +74,7 @@ namespace drinkVendingMachine
             {
                 sprite.amount = int.Parse(spriteDrinks.Text);
                 sprite.name = spriteNameLabel.Text;
+                sprite.price = decimal.Parse(spritePrice.Text.Substring(1));
             }
             catch (Exception ex) {
                 MessageBox.Show(ex.Message);
@@ -96,6 +98,7 @@ namespace drinkVendingMachine
             {
                 mountainDew.name = dewNameLabel.Text;
                 mountainDew.amount = int.Parse(dewDrinks.Text);
+                mountainDew.price = decimal.Parse(dewPrice.Text.Substring(1));
             }
             catch (Exception ex)
             {
@@ -118,6 +121,7 @@ namespace drinkVendingMachine
             {
                 jarritos.name = jarritosNameLabel.Text;
                 jarritos.amount = int.Parse(jarritosDrinks.Text);
+                jarritos.price = decimal.Parse(jarPrice.Text.Substring(1));
             }
             catch (Exception ex)
             {
@@ -130,6 +134,28 @@ namespace drinkVendingMachine
             jarritosDrinks.Text = jarritos.amount.ToString();
 
             if (jarritos.amount == 0) {
+                MessageBox.Show(otherOption);
+            }
+        }
+
+        private void sevenUpPictureBox_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                sevenUp.name = sevenNameLabel.Text;
+                sevenUp.amount = int.Parse(sevenUpDrinks.Text);
+                sevenUp.price = decimal.Parse(sevenPrice.Text.Substring(1));
+            }
+            catch (Exception ex) {
+                MessageBox.Show(ex.Message);
+            }
+            totalSales += 2;
+            sevenUp.amount -= 1;
+
+            salesLabel.Text = "$" + totalSales.ToString();
+            sevenUpDrinks.Text = sevenUp.amount.ToString();
+
+            if (sevenUp.amount == 0) {
                 MessageBox.Show(otherOption);
             }
         }

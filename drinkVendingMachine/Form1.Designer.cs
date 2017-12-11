@@ -194,6 +194,7 @@
             this.sevenUpPictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.sevenUpPictureBox.TabIndex = 13;
             this.sevenUpPictureBox.TabStop = false;
+            this.sevenUpPictureBox.Click += new System.EventHandler(this.sevenUpPictureBox_Click);
             // 
             // jarPrice
             // 
